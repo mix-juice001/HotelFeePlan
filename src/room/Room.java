@@ -7,7 +7,14 @@ abstract public class Room implements RoomCharge {
     protected SeasonType season;
     protected boolean upgraded;
 
-    abstract public Fee charge();
+    @Override
+    public Fee charge() {
+        if (upgraded) return basicCharge().add(upgradeCharge());
+        return basicCharge();
+    }
+
+    @Override
+    abstract public Fee basicCharge();
 
     @Override
     public Fee upgradeCharge() {
@@ -19,7 +26,4 @@ abstract public class Room implements RoomCharge {
         return this;
     }
 
-    public boolean isUpgraded() {
-        return upgraded;
-    }
 }

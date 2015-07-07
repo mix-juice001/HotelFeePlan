@@ -10,7 +10,7 @@ public class ThreePeopleRoom extends Room {
     }
 
     @Override
-    public Fee charge() {
+    public Fee basicCharge() {
         return season.charge(this);
     }
 }

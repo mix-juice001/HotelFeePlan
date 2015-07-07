@@ -9,8 +9,6 @@ public class Child implements Customer {
 
     @Override
     public Fee charge(Room room) {
-        if (room.isUpgraded())
-            return room.charge().add(room.upgradeCharge()).multiply(rate);
         return room.charge().multiply(rate);
     }
 }
