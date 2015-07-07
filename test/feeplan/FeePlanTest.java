@@ -6,9 +6,6 @@ import org.junit.Test;
 import room.Room;
 import room.ThreePeopleRoom;
 import room.TwoPeopleRoom;
-import season.Normal;
-import season.Peak;
-import season.Season;
 import season.SeasonType;
 
 import static org.hamcrest.CoreMatchers.is;

@@ -4,8 +4,6 @@ import fee.ChildRate;
 import fee.Fee;
 import room.Room;
 
-import java.math.BigDecimal;
-
 public class Child implements Customer {
     private ChildRate rate = new ChildRate();
 
