@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Party {
-    private List<Customer> customers = new ArrayList<>();
+    private List<CustomerType> customers = new ArrayList<>();
 
     public Fee charge(Room room) {
         return customers.stream()
@@ -16,7 +16,7 @@ public class Party {
                 .orElse(Fee.ZERO);
     }
 
-    public void add(Customer customer) {
+    public void add(CustomerType customer) {
         customers.add(customer);
     }
 }

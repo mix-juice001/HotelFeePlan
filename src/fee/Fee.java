@@ -18,8 +18,8 @@ public class Fee {
         return new Fee(value.add(fee.value));
     }
 
-    public Fee multiply(BigDecimal rate) {
-        return new Fee(value.multiply(rate));
+    public Fee multiply(ChildRate rate) {
+        return new Fee(value.multiply(rate.value));
     }
 
     public Fee addTax() {

@@ -1,12 +1,13 @@
 package customer;
 
+import fee.ChildRate;
 import fee.Fee;
 import room.Room;
 
 import java.math.BigDecimal;
 
 public class Child implements Customer {
-    private BigDecimal rate = new BigDecimal("0.8");
+    private ChildRate rate = new ChildRate();
 
     @Override
     public Fee charge(Room room) {

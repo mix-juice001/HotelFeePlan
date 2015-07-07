@@ -2,13 +2,14 @@ package room;
 
 import fee.Fee;
 import season.Season;
+import season.SeasonType;
 
 public class TwoPeopleRoom implements Room {
 
-        private Season season;
+        private SeasonType season;
         private boolean upgraded;
 
-        public TwoPeopleRoom(Season season) {
+        public TwoPeopleRoom(SeasonType season) {
             this.season = season;
         }
 
